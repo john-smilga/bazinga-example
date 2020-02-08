@@ -1,0 +1,174 @@
+/* 
+====== 
+Fonts
+======
+*/
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,700|Great+Vibes&display=swap");
+
+/* 
+====== 
+Variables 
+======
+*/
+:root {
+  --cl-primary: #c59d5f;
+  --cl-black: #222;
+  --cl-white: #fff;
+  --cl-off-white: #f7f7f7;
+  --cl-text-grey: #827f79;
+  --cl-bg-grey: #f8f9fa;
+  --ft-body: "Cardo", serif;
+  --ft-title: "Great Vibes", cursive;
+  --transition: all 0.3s linear;
+  --spacing: 0.3rem;
+  --smallSpacing: 2px;
+  --shadow-light: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --shadow-dark: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --border-radius: 0.25rem;
+  --small-width: 85vw;
+  --max-width: 40rem;
+  --full-width: 1170px;
+}
+/* 
+====== 
+Global Styles 
+======
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ft-body);
+  color: var(--cl-black);
+  background: var(--cl-white);
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+p {
+  letter-spacing: var(--smallSpacing);
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--cl-black);
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* utility classes */
+.text-white {
+  color: var(--cl-white);
+}
+.text-primary {
+  color: var(--cl-primary);
+}
+.text-grey {
+  color: var(--cl-text-grey);
+}
+.bg-secondary {
+  background: var(--cl-bg-grey);
+}
+.zero-margin {
+  margin-bottom: 0;
+}
+.section {
+  padding: 6rem 0;
+}
+.center {
+  width: var(--small-width);
+  max-width: var(--full-width);
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  .center {
+    width: 95vw;
+  }
+}
+.section-title {
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+.section-title-center {
+  text-align: center;
+}
+.section-title h3 {
+  color: var(--cl-primary);
+  font-family: var(--ft-title);
+}
+
+/* 
+====== 
+Buttons 
+======
+*/
+
+.btn-black,
+.btn-primary,
+.btn-white {
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  border: 2px solid var(--cl-black);
+  padding: 1.25rem 2rem;
+  display: inline-block;
+  transition: var(--transition);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.btn-black {
+  background: var(--cl-black);
+  color: var(--cl-white);
+}
+.btn-black:hover {
+  background: transparent;
+  color: var(--cl-black);
+}
+.btn-primary {
+  background: var(--cl-primary);
+  color: var(--cl-black);
+  border-color: var(--cl-primary);
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--cl-primary);
+}
+.btn-white {
+  background: var(--cl-white);
+  color: var(--cl-black);
+  border-color: var(--cl-white);
+}
+.btn-white:hover {
+  background: transparent;
+  color: var(--cl-white);
+}
